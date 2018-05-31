@@ -1,0 +1,28 @@
+AWS DATABASE SERVICES:
+
+RDS: Relational Database Management Service
+Not a database in itself but manages Relational databases. Consists of many DB's(Oracle, Postgresql, Mysql etc) in cloud.
+Tasks done by RDS:
+1. Updates DB Patching automatically, 
+2. Installs security patching automatically
+3. Updates rollbacks
+
+
+AMAZON AURORA: Based on MySQL. 5 times faster than MySQL. Better performance.
+
+
+DynamoDB : Database management service to manage Non-relational Databases like MongoDB. Database automatically scales up if more data comes. It grows automatically and shrinks automatically as well. We do not provide any space. It's dynamic.
+
+
+ELASTIC CACHE: When a query is hit and run again and again it creates a load in the DB, then instead of fetching the query from the database, it gets stored in elastic cahe(kind of an In-memory cache) from where it can be fetched quickly and responded quickly. This improves DB performance and reduces DB load. 
+Reduces latency
+Reduces overheads on databases 
+
+
+
+REDSHIFT: Provides analysis on data which comes from RDS and Dynamo DB.
+
+NOTE: COMMAND TO TAKE A SNAPSHOT FOR A MYSQL DATABASE
+1. Goto the bin directory of mySQL database and then run the following command:
+
+mysqldump -u root -p edureka>edureka.sql	**edureka- database name ------ edureka.sql-file name where data would be saved** 

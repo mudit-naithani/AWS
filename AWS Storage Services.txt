@@ -1,0 +1,35 @@
+AWS STORAGE SERVICES:
+
+S3: Simple Storgae Service - Object Oriented File System
+Pay for what you use
+All files uploaded in S3 are treated as objects-- objects stored in buckets--root folder has to be a bucket
+
+ELASTIC BLOCK STORAGE (EBS): Acts as a hard drive for ec2 instances. Cannot be used independently, should be used with ec2 only.
+1 ec2 instance - Can be connected to multiple EBS Volumes. Vice-versa not true!
+Volumes - EBS storage space
+Backup of EBS Volumes are Snapshots.
+Whenver we want to take a snapshot, we should stop the instance and then take the snapshot to control data integrity.
+
+HOSTING A WEBPAGE IN EC2:
+
+1. Install Apache webserver- httpd.
+2. Goto /var/www/html
+3. Create an index.html file and save it.
+4. Start the httpd sevice by the command : service httpd start
+5. Goto the ec2 instance URL and the content of the webpage will be displayed .
+
+
+
+
+ELASTIC FILE SYSTEM:
+
+
+
+GLACIER: used for file archival, Secure, low cost, slow
+Data access - 2-4 hrs retrieval time
+
+
+
+STORAGE GATEWAY: hybrid storage integration
+connects or-premise software appliances with cloud based storage
+

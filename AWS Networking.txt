@@ -1,0 +1,5 @@
+AWS Networking :
+
+
+ROUTE 53: Domain Name system
+It routes the URL from our server to the server where our application is hosted.

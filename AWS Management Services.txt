@@ -1,0 +1,24 @@
+AWS MNAGEMENT SERVICES:
+
+CLOUDWATCH:
+
+Sets alarms/notifications on AWS resources to notify the customer about anything we want,i.e., if the CPU usage goes more than 90%, we can set up an alarm to notify us through e-mails.
+
+
+
+CLOUD FORMATION:
+
+Creates a template of AWS infrastructure which can be used for different environments, so suppose we create an infrastructure and then we do not want to create it again, then we can take a snapshot of that particular infrastructure and that snapshot can be used in any other TEST environment such as DEV, Test or PROD to create new infrastructures.
+
+
+CLOUDTRAIL:
+
+Logs API requests and responses.
+Generate logs and stores it in S3. 
+
+
+OpsWorks:
+
+Configuration Management tool. Consists of LAYERS and STACK.
+Layers are different services and when they are combined together, they are known as stack.
+Generally used when you want to make a basic change in configuration, rather than going and making changes in every service hosted, it is better to make the change in layers of OpsQorks and it will manage everything.

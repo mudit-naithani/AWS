@@ -1,0 +1,27 @@
+AWS COMPUTE CLOUD:
+
+EC2: Rawerver in which you can install,configure, anything you want.
+
+
+Lambda: Adavcned ersion of ec2. Cannot be used to host the application .Can only be used to run background tasks. Eg: suppose we have an application and application is all about images and when we upload an image the image is compressed and it is stored into the file system. So when the image is upoaded that is performed by an application. Now the tasks which have to be done in the background like compression and maybe some more tasks like applying filters and everything, these tasks are background tasks and these are executed by AWS lambda.
+
+How it works:
+
+AWS lambda responds to events. There are triggers which we set up in lambda and in response to thee triggers AWS executes the code.In this case when we are uploading an image or a file, so the moment file/image is uploaded to S3, a trigger is generated and that trigger is being listened by AWS lambda. When it listens to the event, it reponds back by the code which we provide to AWS lambda. It executes the code and then sits again for another event to happen.
+
+
+
+ELASTIC BEANSTALK: Advanced version of ec2. It can Hosts an application. Automated form of ec2. 
+Suppose we have a PHP website that we want to host on ec2. Now for hosting a PHP website we need to create an environment for PHP in ec2 but for elastic beanstalk we do not have to do that. We just have to select what kind of environment we want and AWS will install all the configuration files required and will provide us the environment in which we just need to upload the code and our application or website will be deployed. 
+
+CONS: It has a limited no of environments so if the type of environment we want is listed in elastic beanstalk, then we can proceed with it otherwise we will have to go with ec2. 
+
+
+
+ELASTIC LOAD BALANCING (ELB): Distributes load on deployed instances.
+
+
+AUTO SCALING: Scaled up and down instances without manual intervention. We can configure a matrix, such as we have 5 servers and whenever the combined CPU usage goes beyond 70%, launch a new instance, so whenever the usage goes beyond that percentage, a new instance will be lauunched and then the traffic will be distributed amongst those 6 servers through the help of load balancng. So that is why, elastic load balancing and auto scaling goes hand in hand. In the same way, we can also configure a matrix to decommision a server, such as if the CPU usage goes down below 10%, then we can decommision one instance. 
+
+
+
